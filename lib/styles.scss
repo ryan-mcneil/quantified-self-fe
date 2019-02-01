@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 20px;
+}
+
+#manage-foods-container {
+  width: 500px;
+}
+
+#add-food-container {
+  position: relative;
+}
+
+.add-food-input-group {
+  margin: 12px 20px;
+}
+
+.add-food-input-group label {
+  display: inline-block;
+  width: 100px;
+}
+
+.add-food-input {
+  padding: 12px 5px 5px 10px;
+  width: calc(100% - 130px);
+  height: 30px;
+}
+
+.add-food-input::placeholder {
+  font-size: 24px;
+}
+
+#add-food-submit {
+  float: right;
+  width: 120px;
+  height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  margin: 0 26px;
+}
+
+#foods-list-container {
+  position: absolute;
+  bottom: 0;
+  margin-top: 24px;
+}
+
+#foods-heading-container,
+.foods-list-item-container {
+  display: flex;
+  flex-direction: row;  
+}
+
+#foods-list-items-container {
+  height: 50vh;
+  overflow: scroll;
+}
+
+
+
+h4#foods-heading-name,
+.foods-list-item-name,
+h4#foods-heading-calories,
+.foods-list-item-calories {
+  font-size: 16px;  
+  margin: 0 0 0 20px;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+  
+h4#foods-heading-name,
+.foods-list-item-name {
+  width: 200px;
+}
+
+h4#foods-heading-calories,
+.foods-list-item-calories {
+  width: 70px;
+}
+

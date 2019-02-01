@@ -3,26 +3,41 @@
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet">
 </head>
 <body>
   <main id="app">
     <section id="manage-foods-container">
+      <h1>Foods</h1>
       <div id="add-food-container">
         <form id="add-food-form">
-          <label for="add-food-name">Name</label>
-          <input class="add-food-input"
-                 id="add-food-name" 
-                 type="text" 
-                 placeholder="Enter name of food" 
-                 aria-label="input for food name">
-          <label for="add-food-calories">Calories</label>
-          <input class="add-food-input"
-                 id="add-food-calories" 
-                 type="text" 
-                 placeholder="Enter number of calories" 
-                 aria-label="input for food calories">
+          <div class="add-food-input-group">
+            <label for="add-food-name">Name:</label>
+            <input class="add-food-input"
+                   id="add-food-name" 
+                   type="text" 
+                   placeholder="Enter name of food" 
+                   aria-label="input for food name">
+          </div>
+          <div class="add-food-input-group">
+            <label for="add-food-calories">Calories:</label>
+            <input class="add-food-input"
+                  id="add-food-calories" 
+                  type="text" 
+                  placeholder="Enter number of calories" 
+                  aria-label="input for food calories">
+          </div>
           <input id="add-food-submit" type="submit" value="Add Food" disabled>
         </form>
+      </div>
+      <div id="foods-list-container">
+        <div id="foods-heading-container">
+          <h4 class="foods-heading" id="foods-heading-name">Name</h4>
+          <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+        </div>
+        <div id="foods-list-items-container">
+
+        </div>
       </div>
     </section>
   </main>
