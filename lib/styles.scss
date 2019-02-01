@@ -31,10 +31,23 @@ h1 {
   padding: 12px 5px 5px 10px;
   width: calc(100% - 130px);
   height: 30px;
+  font-size: 24px;
 }
 
 .add-food-input::placeholder {
   font-size: 24px;
+}
+
+#add-form-bottom-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#add-form-feedback {
+  width: 330px;
+  font-size: 18px;
+  padding: 0 0 0 20px;
+  color: blue;
 }
 
 #add-food-submit {
@@ -63,8 +76,6 @@ h1 {
   overflow: scroll;
 }
 
-
-
 h4#foods-heading-name,
 .foods-list-item-name,
 h4#foods-heading-calories,
@@ -80,6 +91,7 @@ h4#foods-heading-calories,
 h4#foods-heading-name,
 .foods-list-item-name {
   width: 200px;
+  text-transform: capitalize;
 }
 
 h4#foods-heading-calories,
