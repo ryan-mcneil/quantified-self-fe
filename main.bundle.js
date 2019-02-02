@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"707b89b56e1946c161b60d15c5fa6917.svg\";\n\n//# sourceURL=webpack:///./lib/images/delete.svg?");
+eval("module.exports = __webpack_require__.p + \"50524aad549f377396dde2d98865f4cc.svg\";\n\n//# sourceURL=webpack:///./lib/images/delete.svg?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("module.exports = __webpack_require__.p + \"707b89b56e1946c161b60d15c5fa691
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"785cbb1c3b7acfeae2f6ea7e877044d2.svg\";\n\n//# sourceURL=webpack:///./lib/images/update.svg?");
+eval("module.exports = __webpack_require__.p + \"c83988edd18039b7a9efa003dd008f87.svg\";\n\n//# sourceURL=webpack:///./lib/images/update.svg?");
 
 /***/ }),
 
