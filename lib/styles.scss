@@ -43,7 +43,8 @@ h1 {
   flex-direction: row;
 }
 
-#add-form-feedback {
+#add-form-feedback,
+#foods-list-feedback {
   width: 330px;
   font-size: 18px;
   padding: 0 0 0 20px;
@@ -57,6 +58,11 @@ h1 {
   padding: 5px;
   font-size: 20px;
   margin: 0 26px;
+}
+
+#foods-list-feedback {
+  height: 50px;
+  width: auto;
 }
 
 #foods-list-container {
@@ -99,3 +105,12 @@ h4#foods-heading-calories,
   width: 70px;
 }
 
+button.delete-food {
+  background: url("./images/delete.svg") no-repeat scroll 0 0 transparent;
+  background-size: 80%;
+  border: none;
+  width: 25px;
+  height: 25px;
+  margin: 2px 10px 0 0;
+  cursor: pointer;
+}
