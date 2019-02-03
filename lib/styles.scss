@@ -20,23 +20,27 @@ h1 {
   position: relative;
 }
 
-.add-food-input-group {
+.add-food-input-group,
+.filter-food-input-group {
   margin: 12px 20px;
 }
 
-.add-food-input-group label {
+.add-food-input-group label,
+.filter-food-input-group label {
   display: inline-block;
   width: 100px;
 }
 
-.add-food-input {
+.add-food-input,
+#filter-food-input {
   padding: 4px 5px 5px 10px;
   width: calc(100% - 130px);
   height: 30px;
   font-size: 24px;
 }
 
-.add-food-input::placeholder {
+.add-food-input::placeholder,
+#filter-food-input::placeholder {
   font-size: 24px;
 }
 
@@ -75,7 +79,7 @@ h1 {
   position: absolute;
   bottom: 0;
   margin-top: 24px;
-  width: 400px;
+  width: 500px;
 }
 
 #foods-heading-container,
