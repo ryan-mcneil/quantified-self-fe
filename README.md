@@ -1,40 +1,31 @@
-# Quantified Self Front-end
+# Quantified Self Front-End
+
+[Production Server Link](https://ryan-mcneil.github.io/quantified-self-fe/)
+
+[Agile Project Management Board](https://github.com/ryan-mcneil/quantified-self-be/projects/1)
+
+Quantified Self is an application that allows users to track calorie intake.  Foods and their corresponding calories are added to a database via a simple input form.  Foods can then be added to any of four defined meals: breakfast, lunch, dinner and snack.  Consumed calories are summarized by meal and day.
+
+Users are also able to add daily and meal goals, helping them track progress throughout the day.  In addition to subtotals for calories consumed for each meal, remaining calories are also displayed based on the goals entered for that meal. Daily total calories consumed, the user's daily goal, and their difference are displayed and updated as foods are added to meals throughout the day.
 
 ## Initial Setup
 
-1. Clone this starter kit repository and rename the repository to `quantified-self-fe` in one command
+1. Clone this repository:
 
   ```shell
-  git clone git@github.com:turingschool-examples/qs-fe-starter-kit.git quantified-self-fe
+  git clone https://github.com/ryan-mcneil/quantified-self-fe.git
   ```
 2. Change into the `quantified-self-fe` directory
 
-3. Remove the default remote (origin)
-
   ```shell
-  git remote rm origin
+  cd quantified-self-fe
   ```
 
-4. Create a new repository on GitHub named `quantified-self-fe`
 
-5. Add your new repository remote - **your remote URL and user name will be different in the command below**
-
-  ```shell
-  git remote add origin git@github.com:<YOUR GITHUB NAME>/quantified-self-fe.git
-  ```
-
-6. Install the dependencies of the starter kit
+3. Install the project dependencies:
 
   ```shell
   npm install
-  ```
-
-7. Add, commit, and push up to your repository
-
-  ```shell
-  git add .
-  git commit -m "Initial commit using starter kit"
-  git push origin master
   ```
 
 ## Running the Server Locally
@@ -49,31 +40,14 @@ Once the server is running, visit in your browser:
 
 * `http://localhost:8080/` to run your application.
 
-You will need to make sure that your Quantified Self API is also running at `http://localhost:3000`
-
-## GitHub Pages Setup
-
-This site will be served from GitHub Pages in production.
-
-In order to see your application running on production:
-
-1. From the command line, run `npm run build`.
-
-2. Commit and push your application to GitHub.
-
-3. Visit your repository on Github
-
-4. Go to Settings
-
-5. Under the Github Pages section of Options, select 'master' as your source and click `Save`
-
-Be sure to `npm run build` and commit before each push to master. A few seconds after you push up, you should be able to see your application at <https://your-github-username.github.io/quantified-self-fe>.
-
 ## Built With
 
 * [JavaScript](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
-* [Express](https://expressjs.com/)
-* [Mocha](https://mochajs.org/)
-* [Chai](https://chaijs.com/)
+
+## Contributors
+
+[Ryan McNeil](https://github.com/ryan-mcneil)
+
+[Michael Gatewood](https://github.com/mngatewood)
 
