@@ -8,7 +8,13 @@ body {
   color: white;
 }
 
-h1 {
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h2 {
   margin: 20px;
 }
 
@@ -83,9 +89,15 @@ h1 {
 }
 
 #foods-heading-container,
-.foods-list-item-container {
+.foods-list-item-container,
+.meal-total-calories-container,
+.meal-calories-remaining-container {
   display: flex;
   flex-direction: row;  
+}
+
+#foods-heading-container {
+  background-color: #121212;
 }
 
 #foods-list-items-container {
@@ -96,7 +108,11 @@ h1 {
 h4#foods-heading-name,
 .foods-list-item-name,
 h4#foods-heading-calories,
-.foods-list-item-calories {
+.foods-list-item-calories,
+h4.meal-total-calories-heading,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-heading,
+h4.meal-calories-remaining-value {
   font-size: 16px;  
   margin: 0 0 0 20px;
   height: 30px;
@@ -106,16 +122,21 @@ h4#foods-heading-calories,
 }
   
 h4#foods-heading-name,
-.foods-list-item-name {
+.foods-list-item-name,
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading {
   width: 200px;
   text-transform: capitalize;
   padding: 7px 7px 0 7px;
 }
 
 h4#foods-heading-calories,
-.foods-list-item-calories {
+.foods-list-item-calories,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-value {
   width: 60px;
   padding: 7px 7px 0 7px;
+  text-align: right;
   // margin-right: 12px;
 }
 
@@ -153,3 +174,47 @@ button.update-food {
   margin: 0 0 -2px 18px;
   cursor: text;
 }
+
+#manage-meals-container {
+  min-width: 50vw;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px 10px 10px 10px; 
+}
+
+.meals-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  height: 30vh;
+  padding: 0 0 0 20px;
+}
+
+.meal-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 20px 0 0;
+}
+
+.meal-subtotals-container {
+  margin: 10px 0 0 0;
+}
+
+.meal-total-calories-container,
+.meal-calories-remaining-container,
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-value {
+  margin: 0;
+  padding: 0;
+}  
+
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading {
+  text-align: right;
+}
+
