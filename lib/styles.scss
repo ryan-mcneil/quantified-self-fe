@@ -88,7 +88,7 @@ h2 {
   width: 500px;
 }
 
-#foods-heading-container,
+.foods-heading-container,
 .foods-list-item-container,
 .meal-total-calories-container,
 .meal-calories-remaining-container {
@@ -96,7 +96,7 @@ h2 {
   flex-direction: row;  
 }
 
-#foods-heading-container {
+.foods-heading-container {
   background-color: #121212;
 }
 
