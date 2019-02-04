@@ -8,8 +8,9 @@
 <body>
   <main id="app">
     <section id="manage-foods-container">
-      <h1>Foods</h1>
+      <div id="current-date-container"></div>
       <div id="add-food-container">
+      <h1>Foods</h1>
         <form id="add-food-form">
           <div class="add-food-input-group">
             <label for="add-food-name">Name:</label>
@@ -28,15 +29,13 @@
                   aria-label="input for food calories">
           </div>
           <div id="add-form-bottom-container">
-            <div id="add-form-feedback">
+            <div id="food-feedback">
             </div>
             <input id="add-food-submit" type="submit" value="Add Food" disabled>
           </div>
         </form>
       </div>
       <div id="foods-list-container">
-        <div id="foods-list-feedback">
-        </div>
         <div id="foods-list-filter">
         </div>
         <div id="foods-heading-container">
