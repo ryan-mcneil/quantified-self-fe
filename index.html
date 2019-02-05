@@ -4,11 +4,18 @@
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
+  <section id="current-date-container">
+    <h3 id="current-date-heading">Date:</h3>
+    <h3 id="current-date-formatted">February 1, 2019</h3>
+    <h3 id="current-date-string">2019-02-01</h3>
+    <button class="change-date">Change</button>
+  </section>
   <main id="app">
     <section id="manage-foods-container">
-      <h1>Foods</h1>
+      <h2>Foods</h2>
       <div id="add-food-container">
         <form id="add-food-form">
           <div class="add-food-input-group">
@@ -28,25 +35,115 @@
                   aria-label="input for food calories">
           </div>
           <div id="add-form-bottom-container">
-            <div id="add-form-feedback">
-            </div>
+            <div id="foods-feedback"></div>
             <input id="add-food-submit" type="submit" value="Add Food" disabled>
           </div>
         </form>
       </div>
       <div id="foods-list-container">
-        <div id="foods-list-feedback">
-        </div>
         <div id="foods-list-filter">
         </div>
-        <div id="foods-heading-container">
+        <div class="foods-heading-container">
           <h4 class="foods-heading" id="foods-heading-name">Name</h4>
           <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
         </div>
-        <div id="foods-list-items-container">
-
-        </div>
+        <div id="foods-list-items-container"></div>
       </div>
+    </section>
+    <section id="manage-meals-container">
+      <h2>Meals</h2>
+      <section class="meals-container-row" id="breakfast-lunch-container">
+        <div class="meal-container" id="breakfast-container">
+          <h3>Breakfast</h3>
+          <div class="foods-heading-container">
+            <h4 class="foods-heading" id="foods-heading-name">Name</h4>
+            <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+          </div>
+          <div class="meals-food-list-container" id="breakfast-foods"></div>
+          <div class="meal-subtotals-container">
+            <div class="meal-total-calories-container">
+              <h4 class="meal-total-calories-heading">Total Calories</h4>
+              <h4 class="meal-total-calories-value">100</h4>
+            </div>
+            <div class="meal-calories-remaining-container">
+              <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
+              <h4 class="meal-calories-remaining-value">0</h4>
+            </div>
+          </div>
+        </div>
+        <div class="meal-container" id="lunch-container">
+          <h3>Lunch</h3>
+          <div class="foods-heading-container">
+            <h4 class="foods-heading" id="foods-heading-name">Name</h4>
+            <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+          </div>
+          <div class="meals-food-list-container" id="lunch-foods"></div>
+          <div class="meal-subtotals-container">
+            <div class="meal-total-calories-container">
+              <h4 class="meal-total-calories-heading">Total Calories</h4>
+              <h4 class="meal-total-calories-value">100</h4>
+            </div>
+            <div class="meal-calories-remaining-container">
+              <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
+              <h4 class="meal-calories-remaining-value">0</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meals-container-row" id="dinner-snack-container">
+        <div class="meal-container"id="dinner-container">
+          <h3>Dinner</h3>
+          <div class="foods-heading-container">
+            <h4 class="foods-heading" id="foods-heading-name">Name</h4>
+            <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+          </div>
+          <div class="meals-food-list-container" id="dinner-foods"></div>
+          <div class="meal-subtotals-container">
+            <div class="meal-total-calories-container">
+              <h4 class="meal-total-calories-heading">Total Calories</h4>
+              <h4 class="meal-total-calories-value">100</h4>
+            </div>
+            <div class="meal-calories-remaining-container">
+              <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
+              <h4 class="meal-calories-remaining-value">0</h4>
+            </div>
+          </div>
+        </div>
+        <div class="meal-container" id="snack-container">
+          <h3>Snack</h3>
+          <div class="foods-heading-container">
+            <h4 class="foods-heading" id="foods-heading-name">Name</h4>
+            <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+          </div>
+          <div class="meals-food-list-container" id="snack-foods"></div>
+          <div class="meal-subtotals-container">
+            <div class="meal-total-calories-container">
+              <h4 class="meal-total-calories-heading">Total Calories</h4>
+              <h4 class="meal-total-calories-value">100</h4>
+            </div>
+            <div class="meal-calories-remaining-container">
+              <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
+              <h4 class="meal-calories-remaining-value">0</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meals-container-row" id="goals-totals-container">
+        <div class="meal-container" id="goals-container">
+        <h3>Daily Goals</h3>
+        <div id="foods-heading-container">
+          <h4 class="foods-heading" id="foods-heading-name">Meal</h4>
+          <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+        </div>
+        </div>
+        <div class="meal-container" id="totals-container">
+          <h3>Totals</h3>
+          <div id="foods-heading-container">
+            <h4 class="foods-heading" id="foods-heading-name"></h4>
+            <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
