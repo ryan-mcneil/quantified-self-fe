@@ -8,6 +8,23 @@ body {
   color: white;
 }
 
+#current-date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 0 0 20px;
+}
+
+#current-date-string {
+  display: none;
+}
+
+h3#current-date-heading,
+h3#current-date-formatted {
+  text-align: left;
+  margin: 28px 20px 6px 20px;  
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -171,25 +188,28 @@ button.update-food {
 
 .editable {
   border: 1px black solid;
-  margin: 0 0 -2px 18px;
+  margin: -1px;
   cursor: text;
 }
 
 #manage-meals-container {
+  position: relative;
   min-width: 50vw;
+  margin-top: -73px;
 }
 
 h3 {
   text-align: center;
-  margin: 20px 10px 10px 10px; 
+  margin: 0 10px 3px 0; 
 }
 
 .meals-container-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
-  height: 30vh;
+  height: 260px;
   padding: 0 0 0 20px;
+  margin: 0 0 20px 0;
 }
 
 .meal-container {
