@@ -6,6 +6,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet">
 </head>
 <body>
+  <section id="current-date-container">
+    <h3 id="current-date-heading">Date:</h3>
+    <h3 id="current-date-formatted">February 1, 2019</h3>
+    <h3 id="current-date-string">2019-02-01</h3>
+    <button class="change-date">Change</button>
+  </section>
   <main id="app">
     <section id="manage-foods-container">
       <h2>Foods</h2>
@@ -86,7 +92,7 @@
           </div>
         </div>
       </section>
-      <section class="meals-container-row" id="dinner-snacks-container">
+      <section class="meals-container-row" id="dinner-snack-container">
         <div class="meal-container"id="dinner-container">
           <h3>Dinner</h3>
           <div class="foods-heading-container">
@@ -105,13 +111,13 @@
             </div>
           </div>
         </div>
-        <div class="meal-container" id="snacks-container">
-          <h3>Snacks</h3>
+        <div class="meal-container" id="snack-container">
+          <h3>Snack</h3>
           <div class="foods-heading-container">
             <h4 class="foods-heading" id="foods-heading-name">Name</h4>
             <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
           </div>
-          <div class="meals-food-list-container" id="snacks-foods"></div>
+          <div class="meals-food-list-container" id="snack-foods"></div>
           <div class="meal-subtotals-container">
             <div class="meal-total-calories-container">
               <h4 class="meal-total-calories-heading">Total Calories</h4>
