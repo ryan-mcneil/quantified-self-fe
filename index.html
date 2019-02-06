@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Quantified Self - Diary</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
   <section id="current-date-container">
@@ -34,18 +35,15 @@
                   aria-label="input for food calories">
           </div>
           <div id="add-form-bottom-container">
-            <div id="add-form-feedback">
-            </div>
+            <div id="foods-feedback"></div>
             <input id="add-food-submit" type="submit" value="Add Food" disabled>
           </div>
         </form>
       </div>
       <div id="foods-list-container">
-        <div id="foods-list-feedback">
-        </div>
         <div id="foods-list-filter">
         </div>
-        <div id="foods-heading-container">
+        <div class="foods-heading-container">
           <h4 class="foods-heading" id="foods-heading-name">Name</h4>
           <h4 class="foods-heading" id="foods-heading-calories">Calories</h4>
         </div>
