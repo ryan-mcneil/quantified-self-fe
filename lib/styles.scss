@@ -1,3 +1,17 @@
+// datepicker css==========================================
+.ui-datepicker {
+  width: 330px;
+}
+
+.ui-datepicker tbody tr {
+  height: 35px;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  // height: 40px;
+  line-height: 22px;
+}
+//=========================================================
+
 body {
   margin: 0;
   padding: 0;
@@ -8,27 +22,14 @@ body {
   color: white;
 }
 
-#current-date-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 0 0 20px;
-}
-
-#current-date-string {
-  display: none;
-}
-
-h3#current-date-heading,
-h3#current-date-formatted {
-  text-align: left;
-  margin: 28px 20px 6px 20px;  
-}
-
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#current-date-container {
+  padding: 20px;
 }
 
 h2 {
@@ -41,7 +42,7 @@ h2 {
 
 #add-food-container {
   position: relative;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
 }
 
 .add-food-input-group,
@@ -58,7 +59,7 @@ h2 {
 .add-food-input,
 #filter-food-input {
   padding: 4px 5px 5px 10px;
-  width: calc(100% - 146px);
+  width: 320px;
   height: 30px;
   font-size: 24px;
 }
@@ -74,30 +75,23 @@ h2 {
 }
 
 #foods-feedback {
-  width: 335px;
+  height: 50px;
+  width: 310px;
   font-size: 18px;
-  padding: 0 0 0 24px;
   color: #999999;
   margin: 5px 20px 5px 0;
 }
 
-#add-food-submit,
-.change-date {
+#add-food-submit {
   width: 120px;
   height: 50px;
   padding: 5px;
   font-size: 20px;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 0 15px;
   background-color: #FC5F45;
   color: white;
   border-radius: 5px;
-}
-
-.change-date {
-  margin: 28px 40px;
-  height: 40px;
-  width: 100px;
 }
 
 #foods-list-container {
@@ -118,6 +112,7 @@ h2 {
 
 .foods-heading-container {
   background-color: #121212;
+  max-width: 448px;
 }
 
 #foods-list-items-container {
@@ -147,7 +142,7 @@ h4.meal-total-calories-heading,
 h4.meal-calories-remaining-heading {
   width: 200px;
   text-transform: capitalize;
-  padding: 7px 7px 0 7px;
+  padding: 7px 0 0 7px;
 }
 
 h4#foods-heading-calories,

@@ -2,19 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Quantified Self - Diary</title>
+  <title>Quantified Self</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="all" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"
+  />
   <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
-  <section id="current-date-container">
-    <h3 id="current-date-heading">Date:</h3>
-    <h3 id="current-date-formatted">February 1, 2019</h3>
-    <h3 id="current-date-string">2019-02-01</h3>
-    <button class="change-date">Change</button>
-  </section>
   <main id="app">
     <section id="manage-foods-container">
+      <div class="add-food-input-group" id="current-date-container">
+        <label for="datepicker">Date:</label>
+        <input class="add-food-input" id="datepicker" type="text" aria-label="input for date">
+        <input id="alternate-date" type="hidden">
+      </div>
       <h2>Foods</h2>
       <div id="add-food-container">
         <form id="add-food-form">
@@ -63,11 +64,11 @@
           <div class="meal-subtotals-container">
             <div class="meal-total-calories-container">
               <h4 class="meal-total-calories-heading">Total Calories</h4>
-              <h4 class="meal-total-calories-value">100</h4>
+              <h4 class="meal-total-calories-value">0</h4>
             </div>
             <div class="meal-calories-remaining-container">
               <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
-              <h4 class="meal-calories-remaining-value">0</h4>
+              <h4 class="meal-calories-remaining-value"></h4>
             </div>
           </div>
         </div>
@@ -81,11 +82,11 @@
           <div class="meal-subtotals-container">
             <div class="meal-total-calories-container">
               <h4 class="meal-total-calories-heading">Total Calories</h4>
-              <h4 class="meal-total-calories-value">100</h4>
+              <h4 class="meal-total-calories-value">0</h4>
             </div>
             <div class="meal-calories-remaining-container">
               <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
-              <h4 class="meal-calories-remaining-value">0</h4>
+              <h4 class="meal-calories-remaining-value"></h4>
             </div>
           </div>
         </div>
@@ -101,11 +102,11 @@
           <div class="meal-subtotals-container">
             <div class="meal-total-calories-container">
               <h4 class="meal-total-calories-heading">Total Calories</h4>
-              <h4 class="meal-total-calories-value">100</h4>
+              <h4 class="meal-total-calories-value">0</h4>
             </div>
             <div class="meal-calories-remaining-container">
               <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
-              <h4 class="meal-calories-remaining-value">0</h4>
+              <h4 class="meal-calories-remaining-value"></h4>
             </div>
           </div>
         </div>
@@ -119,11 +120,11 @@
           <div class="meal-subtotals-container">
             <div class="meal-total-calories-container">
               <h4 class="meal-total-calories-heading">Total Calories</h4>
-              <h4 class="meal-total-calories-value">100</h4>
+              <h4 class="meal-total-calories-value">0</h4>
             </div>
             <div class="meal-calories-remaining-container">
               <h4 class="meal-calories-remaining-heading">Calories Remaining</h4>
-              <h4 class="meal-calories-remaining-value">0</h4>
+              <h4 class="meal-calories-remaining-value"></h4>
             </div>
           </div>
         </div>
@@ -179,6 +180,7 @@
     </section>
   </main>
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="main.bundle.js"></script>
 </body>
 </html>
