@@ -33,7 +33,7 @@ main {
 }
 
 h2 {
-  margin: 20px;
+  margin: 0 0 20px 20px;
 }
 
 #manage-foods-container {
@@ -53,7 +53,7 @@ h2 {
 .add-food-input-group label,
 .filter-food-input-group label {
   display: inline-block;
-  width: 100px;
+  width: 120px;
 }
 
 .add-food-input,
@@ -79,6 +79,7 @@ h2 {
   width: 310px;
   font-size: 18px;
   color: #999999;
+  margin: 5px 20px 5px 0;
 }
 
 #add-food-submit {
