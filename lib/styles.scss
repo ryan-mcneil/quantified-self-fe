@@ -96,7 +96,7 @@ h2 {
   position: absolute;
   bottom: 0;
   margin-top: 24px;
-  width: 600px;
+  width: 540px;
   padding: 0 20px;
 }
 
@@ -177,7 +177,8 @@ button.delete-meal-food {
   background: url("./images/delete.svg") no-repeat scroll 0 0 transparent;
 }
 
-button.update-food {
+button.update-food,
+button.update-goal {
   background: url("./images/update.svg") no-repeat scroll 0 0 transparent;
 }
 
