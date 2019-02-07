@@ -172,7 +172,8 @@ h4.meal-calories-remaining-value {
   outline: none;
 }
 
-button.delete-food {
+button.delete-food,
+button.delete-meal-food {
   background: url("./images/delete.svg") no-repeat scroll 0 0 transparent;
 }
 
