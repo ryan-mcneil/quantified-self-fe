@@ -1,40 +1,68 @@
+// datepicker css==========================================
+#ui-datepicker-div {
+  left: 183px;
+}
+
+.ui-datepicker {
+  width: 350px;
+}
+
+.ui-datepicker tbody tr {
+  height: 35px;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+  line-height: 22px;
+}
+//=========================================================
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  background-color: #333333;
-  color: white;
+  background-color: #DDDDDD;
+  color: #000000;
 }
 
-h1 {
-  margin: 20px;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#current-date-container {
+  padding: 20px;
+}
+
+h2 {
+  margin: 0 0 20px 20px;
 }
 
 #manage-foods-container {
-  width: 500px;
+  min-width: 520px;
 }
 
 #add-food-container {
   position: relative;
+  padding: 0 20px;
 }
 
 .add-food-input-group,
 .filter-food-input-group {
-  margin: 12px 20px;
+  margin: 12px 0;
 }
 
 .add-food-input-group label,
 .filter-food-input-group label {
   display: inline-block;
-  width: 100px;
+  width: 120px;
 }
 
 .add-food-input,
 #filter-food-input {
   padding: 4px 5px 5px 10px;
-  width: calc(100% - 130px);
+  width: 320px;
   height: 30px;
   font-size: 24px;
 }
@@ -49,107 +77,231 @@ h1 {
   flex-direction: row;
 }
 
-#add-form-feedback,
-#foods-list-feedback {
-  width: 330px;
+#foods-feedback {
+  height: 50px;
+  width: 310px;
   font-size: 18px;
-  padding: 0 0 0 24px;
-  color: #999999;
+  color: navy;
+  margin: 5px 20px 5px 0;
 }
 
 #add-food-submit {
-  float: right;
   width: 120px;
   height: 50px;
-  padding: 5px;
   font-size: 20px;
   font-weight: 600;
-  margin: 0 26px;
-  background-color: #FC5F45;
-  color: white;
+  margin: 0 0 0 15px;
+  background-color: #BBBBBB;
+  color: #000000;
   border-radius: 5px;
-}
-
-#foods-list-feedback {
-  height: 50px;
-  width: auto;
+  cursor: pointer;
 }
 
 #foods-list-container {
   position: absolute;
   bottom: 0;
-  margin-top: 24px;
-  width: 500px;
+  margin: 24px 0;
+  width: 540px;
+  padding: 0 20px;
 }
 
-#foods-heading-container,
-.foods-list-item-container {
+.foods-heading-container,
+.foods-list-item-container,
+.meal-total-calories-container,
+.meal-calories-remaining-container {
   display: flex;
   flex-direction: row;  
 }
 
+.foods-heading-container {
+  background-color: #666666;
+  color: #FFFFFF;
+  max-width: 468px;
+}
+
 #foods-list-items-container {
-  height: 50vh;
+  height: 45vh;
   overflow: scroll;
 }
 
 h4#foods-heading-name,
 .foods-list-item-name,
 h4#foods-heading-calories,
-.foods-list-item-calories {
+.foods-list-item-calories,
+h4.meal-total-calories-heading,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-heading,
+h4.meal-calories-remaining-value {
   font-size: 16px;  
-  margin: 0 0 0 20px;
+  margin: 0;
   height: 30px;
   white-space: nowrap;
   overflow: hidden;
-
 }
   
 h4#foods-heading-name,
-.foods-list-item-name {
+.foods-list-item-name,
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading {
   width: 200px;
   text-transform: capitalize;
-  padding: 7px 7px 0 7px;
+  padding: 7px 0 0 7px;
 }
 
 h4#foods-heading-calories,
-.foods-list-item-calories {
+.foods-list-item-calories,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-value {
   width: 60px;
   padding: 7px 7px 0 7px;
-  // margin-right: 12px;
+  text-align: right;
 }
 
 .foods-list-item-container .round-button {
-  background-size: 80%;
+  background-size: 100%;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin: 8px 0 0 10px;
   cursor: pointer;
   outline: none;
 }
 
 .foods-list-item-container .oval-button {
-  background-color: #FC5F45;
-  color: white;
+  background-color: #BBBBBB;
+  color: #000000;
   border-radius: 5px;
   font-size: 16px;
-  height: 30px;
+  height: 25px;
   margin: 5px 0 0 10px;
   cursor: pointer;
   outline: none;
 }
 
-button.delete-food {
-  background: url("./images/delete.svg") no-repeat scroll 0 0 transparent;
+button.delete-food,
+button.delete-meal-food {
+  background: url("./images/delete.svg");
 }
 
-button.update-food {
-  background: url("./images/update.svg") no-repeat scroll 0 0 transparent;
+button.update-food,
+button.update-goal {
+  background: url("./images/update.svg");
 }
 
 .editable {
   border: 1px black solid;
-  margin: 0 0 -2px 18px;
+  margin: -1px -2px -1px 0;
   cursor: text;
+  padding-left: 6px;
+}
+
+.add-to-meal-select {
+  margin: 7px 0 7px 10px;
+  background-color: #BBBBBB;
+  color: #000000;
+  cursor: pointer;
+}
+
+#manage-meals-container {
+  position: relative;
+  min-width: 50vw;
+}
+
+#meals-container {
+  position: fixed;
+  bottom: 0;
+  height: 525px;
+  overflow: scroll;
+  margin: 24px 0;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 10px 3px 0; 
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.meals-container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  padding: 0 0 0 20px;
+  margin: 0 0 20px 0;
+}
+
+.meal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  margin: 0 70px 0 0;
+}
+
+.meal-container h2 {
+  margin-left: 0;
+}
+
+.meal-container .foods-heading-container {
+  max-width: 320px;
+}
+
+#goals-totals-container {
+  margin: 25px 0 -70px 0;
+}
+
+#goals-totals-container h3 {
+  font-size: 36px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.totals-heading {
+  max-width: 320px;
+}
+
+.meal-subtotals-container {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0 0 0;
+}
+
+.meals-food-list-container {
+  margin: 0 0 70px 0;
+}
+
+.meal-total-calories-container,
+.meal-calories-remaining-container,
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading,
+h4.meal-total-calories-value,
+h4.meal-calories-remaining-value {
+  margin: 0;
+  padding: 0;
+}  
+
+h4.meal-total-calories-heading,
+h4.meal-calories-remaining-heading {
+  text-align: right;
+}
+
+select:hover,
+.oval-button:hover,
+#add-food-submit:hover {
+  background-color: #EEEEEE;
+}
+
+#add-food-submit:disabled {
+  background-color: #EEEEEE;
+  cursor: auto;
+}
+
+button.delete-food:hover,
+button.delete-meal-food:hover {
+  background-image: url("./images/delete-hover.svg");
+}
+
+button.update-food:hover,
+button.update-goal:hover {
+  background-image: url("./images/update-hover.svg");
 }
