@@ -1,6 +1,10 @@
 // datepicker css==========================================
+#ui-datepicker-div {
+  left: 183px;
+}
+
 .ui-datepicker {
-  width: 330px;
+  width: 350px;
 }
 
 .ui-datepicker tbody tr {
@@ -17,8 +21,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  background-color: #333333;
-  color: white;
+  background-color: #DDDDDD;
+  color: #000000;
 }
 
 main {
@@ -77,7 +81,7 @@ h2 {
   height: 50px;
   width: 310px;
   font-size: 18px;
-  color: #999999;
+  color: navy;
   margin: 5px 20px 5px 0;
 }
 
@@ -87,15 +91,16 @@ h2 {
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 0 15px;
-  background-color: #FC5F45;
-  color: white;
+  background-color: #BBBBBB;
+  color: #000000;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #foods-list-container {
   position: absolute;
   bottom: 0;
-  margin-top: 24px;
+  margin: 24px 0;
   width: 540px;
   padding: 0 20px;
 }
@@ -109,7 +114,8 @@ h2 {
 }
 
 .foods-heading-container {
-  background-color: #121212;
+  background-color: #666666;
+  color: #FFFFFF;
   max-width: 468px;
 }
 
@@ -152,18 +158,18 @@ h4.meal-calories-remaining-value {
 }
 
 .foods-list-item-container .round-button {
-  background-size: 80%;
+  background-size: 100%;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   margin: 8px 0 0 10px;
   cursor: pointer;
   outline: none;
 }
 
 .foods-list-item-container .oval-button {
-  background-color: #FC5F45;
-  color: white;
+  background-color: #BBBBBB;
+  color: #000000;
   border-radius: 5px;
   font-size: 16px;
   height: 25px;
@@ -174,12 +180,12 @@ h4.meal-calories-remaining-value {
 
 button.delete-food,
 button.delete-meal-food {
-  background: url("./images/delete.svg") no-repeat scroll 0 0 transparent;
+  background: url("./images/delete.svg");
 }
 
 button.update-food,
 button.update-goal {
-  background: url("./images/update.svg") no-repeat scroll 0 0 transparent;
+  background: url("./images/update.svg");
 }
 
 .editable {
@@ -190,8 +196,9 @@ button.update-goal {
 
 .add-to-meal-select {
   margin: 7px 0 7px 10px;
-  background-color: #FC5F45;
-  color: white;
+  background-color: #BBBBBB;
+  color: #000000;
+  cursor: pointer;
 }
 
 #manage-meals-container {
@@ -199,29 +206,67 @@ button.update-goal {
   min-width: 50vw;
 }
 
+#meals-container {
+  position: fixed;
+  bottom: 0;
+  height: 525px;
+  overflow: scroll;
+  margin: 24px 0;
+}
+
 h3 {
   text-align: center;
   margin: 0 10px 3px 0; 
+  font-size: 22px;
+  text-decoration: underline;
 }
 
 .meals-container-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
-  height: 260px;
+  justify-content: flex-start; 
   padding: 0 0 0 20px;
   margin: 0 0 20px 0;
 }
 
 .meal-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 0 20px 0 0;
+  width: 340px;
+  margin: 0 70px 0 0;
+}
+
+.meal-container h2 {
+  margin-left: 0;
+}
+
+.meal-container .foods-heading-container {
+  max-width: 320px;
+}
+
+#goals-totals-container {
+  margin: 25px 0 -70px 0;
+}
+
+#goals-totals-container h3 {
+  font-size: 36px;
+  text-align: left;
+  text-decoration: none;
+}
+
+.totals-heading {
+  max-width: 320px;
 }
 
 .meal-subtotals-container {
+  position: absolute;
+  bottom: 0;
   margin: 10px 0 0 0;
+}
+
+.meals-food-list-container {
+  margin: 0 0 70px 0;
 }
 
 .meal-total-calories-container,
@@ -239,3 +284,23 @@ h4.meal-calories-remaining-heading {
   text-align: right;
 }
 
+select:hover,
+.oval-button:hover,
+#add-food-submit:hover {
+  background-color: #EEEEEE;
+}
+
+#add-food-submit:disabled {
+  background-color: #EEEEEE;
+  cursor: auto;
+}
+
+button.delete-food:hover,
+button.delete-meal-food:hover {
+  background-image: url("./images/delete-hover.svg");
+}
+
+button.update-food:hover,
+button.update-goal:hover {
+  background-image: url("./images/update-hover.svg");
+}
